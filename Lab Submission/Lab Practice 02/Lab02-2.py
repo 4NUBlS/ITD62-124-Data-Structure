@@ -7,7 +7,7 @@ class CircularQueue:
         self.rear = -1
 
     def enqueue(self, item):
-        if (self.rear+1)% self.n == self.front % self.n:
+        if (self.rear+1)% self.n == self.front:
             print('Circular queue เต็ม')
         else:     
             if self.front == -1:               
